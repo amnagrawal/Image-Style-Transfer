@@ -10,13 +10,10 @@ In view of creating new art in painting, artists always look to create something
 
 In the research paper, the author has focussed on a class of Deep Neural Network which is very powerful for image processing named Convolutional Neural Networks. In CNN, we have layers of computational units where each unit processes some visual information or feature from the input image and output of the layer will be feature maps containing all the extracted features. We have used VGG - 19 architecture in our implementation. 
 
-<center>
 
 ![](Project%20Report.001.png)
 
-</center>
-
-<center>Source: https://medium.com/machine-learning-algorithms/image-style-transfer-740d08f8c1bd </center>
+Source: https://medium.com/machine-learning-algorithms/image-style-transfer-740d08f8c1bd
 
 Convolutional Neural Networks are used to train object recognition models. In this process, they develop a  representation  of  the  image  that  makes  object  information  increasingly  explicit  along  with  the processing hierarchy. Higher layers in the network capture the high-level content in terms of objects. However, lower layers simply reproduce the exact pixel values of the original image. So, we choose a feature map from a higher layer of the network for content representation. Content is nothing but a macro-structure of the input image.  
 
@@ -32,7 +29,7 @@ The content and style loss functions are mean squared error between squared erro
 
 ![](Project%20Report.005.png)
 
-<center> Image source: https://github.com/Adi-iitd/AI-Art </center>
+Image source: https://github.com/Adi-iitd/AI-Art
 
 To identify the style of image we compare different layers with their correlations. So, we are using the feature map gram matrix of each layer to obtain an image style. taking difference of the gram matrices and then difference of original and generated image gives us final style cost. Below is basic architecture. 
 
@@ -48,17 +45,19 @@ To identify the style of image we compare different layers with their correlatio
 - Run ‘main.py’ file to get the results. 
 - After the training completes, a display window shows along with a Trackbar, to see the evolution of the generated image over the course of the training process. 
 - In addition, plots are generated for the style loss, content loss and the total loss over number of iterations. 
-- For  the  purpose  of demonstration we have shown the working of the program on the same content image but two different style images. This is to verify that we are indeed able to transfer style from any style image onto the original image.** 
+- For  the  purpose  of demonstration we have shown the working of the program on the same content image but two different style images. This is to verify that we are indeed able to transfer style from any style image onto the original image.
+
+
 
 **4   Results and Discussion **
 
 ![](Project%20Report.007.png)
 
-<center> Taking a content image and a style1 image </center>
+ Taking a content image and a style1 image 
 
 ​											 ![](Project%20Report.008.png)
 
-<center> Content and style images taken Image obtained every 5 iterations </center>
+Content and style images taken Image obtained every 5 iterations
 
 
 
@@ -68,19 +67,17 @@ To identify the style of image we compare different layers with their correlatio
 
 ![](Project%20Report.013.png)
 
-<center> Final Image Generated </center>
+Final Image Generated
 
 
-
-Taking a content image and a style2 image
 
 ​																	 ![](Project%20Report.014.png)
 
-<center> Content and style images taken </center>
+Taking a content image and a style2 image
 
 ​										 ![](Project%20Report.015.png)
 
-<center> Image obtained every 5 iterations </center>
+Image obtained every 5 iterations 
 
 ​															![](Project%20Report.016.png)![](Project%20Report.017.png)
 
@@ -88,15 +85,17 @@ Taking a content image and a style2 image
 
 ![](Project%20Report.019.png)
 
-<center> Final Image Generated </center>
+Final Image Generated
 
-
+<p>
 
 - As it can be seen from the content\_loss graph, the content loss increases with the iterations 
 - This is expected, as the initial image taken is the content image itself. Thus, it has the maximum content similarity before training.  
 - But, the total loss decreases over time. This is because the style loss reduces over the training process 
 - And since the style loss has much higher weight than the content loss (of the magnitude of 1e-5) the style loss causes the total loss to reduce over the iterations. 
 - The final image generated primarily contains the content from the original image, but the style of the style image has been generated onto it. 
+
+
 
 **5   References** 
 
