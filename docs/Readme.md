@@ -87,15 +87,14 @@ Image obtained every 5 iterations
 
 Final Image Generated
 
-<p>
+
+
 
 - As it can be seen from the content\_loss graph, the content loss increases with the iterations 
 - This is expected, as the initial image taken is the content image itself. Thus, it has the maximum content similarity before training.  
 - But, the total loss decreases over time. This is because the style loss reduces over the training process 
 - And since the style loss has much higher weight than the content loss (of the magnitude of 1e-5) the style loss causes the total loss to reduce over the iterations. 
 - The final image generated primarily contains the content from the original image, but the style of the style image has been generated onto it. 
-
-
 
 **5   References** 
 
