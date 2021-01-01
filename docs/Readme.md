@@ -10,7 +10,11 @@ In view of creating new art in painting, artists always look to create something
 
 In the research paper, the author has focussed on a class of Deep Neural Network which is very powerful for image processing named Convolutional Neural Networks. In CNN, we have layers of computational units where each unit processes some visual information or feature from the input image and output of the layer will be feature maps containing all the extracted features. We have used VGG - 19 architecture in our implementation. 
 
-<center>![](Project%20Report.001.png)</center>
+<center>
+
+![](Project%20Report.001.png)
+
+</center>
 
 <center>Source: https://medium.com/machine-learning-algorithms/image-style-transfer-740d08f8c1bd </center>
 
